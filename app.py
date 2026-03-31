@@ -322,7 +322,7 @@ if run_btn:
     col_w, col_chart = st.columns([1, 1])
     with col_w:
         st.dataframe(
-            weight_df.style.background_gradient(subset=["Weight (%)"], cmap="Blues"),
+            weight_df,
             hide_index=True,
             use_container_width=True,
         )
